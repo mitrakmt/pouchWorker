@@ -33,7 +33,22 @@ queueController.CRON_JOB = (req, res) => {
 }
 
 queueController.GET_NEW_QUEUE = () => {
+    var options = {
+        uri: 'localhost:8000/api/',
+        headers: {
+            'User-Agent': 'Request-Promise'
+        },
+        json: true 
+    }
 
+    return request(options)
+        .then(response => {
+            return response
+        })
+        .catch(error => {
+            console.log(error)
+            return false
+        })
 }
 
 module.exports = queueController
