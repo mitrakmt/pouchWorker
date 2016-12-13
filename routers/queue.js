@@ -1,7 +1,7 @@
 let queueRouter = require('express').Router()
-let queueController = require('../controller/links')
+let queueController = require('../controllers/queue')
 
 queueRouter.route('/')
-    .get(queueController.)
+    .get(queueController.CRON_JOB)
 
 module.exports = queueRouter

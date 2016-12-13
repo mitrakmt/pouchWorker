@@ -1,5 +1,4 @@
 let queueController = {}
-let queueModel = require('../models/queue')
 
 queueController.CRON_JOB = (req, res) => {
     let done = () => {
@@ -20,7 +19,7 @@ queueController.CRON_JOB = (req, res) => {
 }
 
 queueController.GET_NEW_QUEUE = () => {
-    
+
 }
 
 module.exports = queueController

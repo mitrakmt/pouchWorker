@@ -4,10 +4,8 @@ let logger = require('morgan')
 let bodyParser = require('body-parser')
 let path = require('path')
 let cors = require('cors')
-let moment = require('moment')
 let helmet = require('helmet')
 let rootRouter = require('./router')
-let db = require('./db')
 let PORT = process.env.PORT || 7000
 
 app.use(logger('dev'))
